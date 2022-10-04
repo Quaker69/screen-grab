@@ -1,0 +1,2 @@
+To write the output text in a file:
+
