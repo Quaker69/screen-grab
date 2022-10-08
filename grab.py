@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 from PIL import ImageGrab
 import pytesseract
+import pyautogui
 
 while True:
     img= ImageGrab.grab(bbox=(650,477,1259,543))
@@ -11,6 +12,8 @@ while True:
     
     #print(pytesseract.image_to_string(('frame')))
     print(pytesseract.image_to_string(img_np))
+    
+
     if cv2.waitKey(1) & 0Xff == ord('q'):
         break
     
